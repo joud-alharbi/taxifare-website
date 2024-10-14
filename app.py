@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # Title for the web app
-st.title('TaxiFareModel Frontend🚗')
+st.title('TaxiFare Model Frontend🚗')
 
 st.markdown('''
 ### Welcome to the Taxi Fare Prediction app!
@@ -50,8 +50,6 @@ passenger_count = st.number_input(
     min_value=1, max_value=8, value=1
 )
 api_url = st.secrets['api_url']
-# Your custom API URL (replace this with your actual API endpoint)
-api_url = 'https://wagon-data-tpl-image-370098196015.europe-west1.run.app/predict'  # <--- Replace this!
 
 # Predict button
 if st.button('Get Fare Prediction'):
